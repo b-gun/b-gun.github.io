@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>#NeshwedsBuddhi</title>
+		<meta name="Resource-type" content="Document" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+		<script type="text/javascript" src="js/examples.js"></script>
+
+		<!-- Fade In Code -->
+		<script type="text/javascript">
+			$("#section0 p").addClass("load");
+		</script>
+
+		<!-- Mobile Responsive Code -->
+		<script type="text/javascript">
+			if (screen.width <= 699) {
+				document.location = "mobile.html";
+			}
+		</script>
+
+		<!-- Fullpage.js Code -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					// scrollOverflow: true,
+					scrollingSpeed: 800,
+					css3: true
+				});
+			});
+		</script>
+
+		<!-- Timer Code -->
+		<script>
+		var end = new Date('01/26/2018 4:30 PM');
+
+	    var _second = 1000;
+	    var _minute = _second * 60;
+	    var _hour = _minute * 60;
+	    var _day = _hour * 24;
+	    var timer;
+
+	    function showRemaining() {
+	        var now = new Date();
+	        var distance = end - now;
+	        if (distance < 0) {
+            clearInterval(timer);
+            document.getElementById('countdown').innerHTML = 'EXPIRED!';
+            return;
+        }
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+
+        document.getElementById('countdown').innerHTML = days + 'days ';
+        document.getElementById('countdown').innerHTML += hours + 'hrs ';
+        document.getElementById('countdown').innerHTML += minutes + 'mins ';
+        document.getElementById('countdown').innerHTML += seconds + 'secs';
+    	}
+
+    	timer = setInterval(showRemaining, 1000);
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+		<style>
+			@font-face {
+				font-family: Blackjack;
+   				src: url('fonts/blackjack.otf');
+			}
+
+			/*Section CSS*/
+			.section {
+				text-align: center;
+				background-size: cover;
+			}		
+
+			.slide-full {
+				color: black;
+			}
+
+			.slide {
+				background-size: cover;
+			}
+
+			.container {
+				margin-left: auto;
+				margin-right: auto;
+				overflow-x: hidden;
+				overflow-y: visible; 
+			}
+
+			#section0 {
+				font-family: Blackjack;
+				background-image: url("img/background-slide1.jpg");
+				background-size: 100% 100%;
+				color: white;
+				font-size: 150%;
+			}
+
+			#section0 p {
+				font-size: 90px;
+				webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+			    -moz-animation: fadein 5s; /* Firefox < 16 */
+			    -ms-animation: fadein 5s; /* Internet Explorer */
+			    -o-animation: fadein 5s; /* Opera < 12.1 */
+			    animation: fadein 5s;
+			}
+
+			@keyframes fadein {
+			    from { opacity: 0; }
+			    to   { opacity: 1; }
+			}
+
+			/* Safari, Chrome and Opera > 12.1 */
+			@-webkit-keyframes fadein {
+			    from { opacity: 0; }
+			    to   { opacity: 1; }
+			}
+
+			#section1 {
+				font-family: Blackjack;
+				background-color: white;
+				background-size: 100% 100%;
+				color: black;
+
+			}
+
+			#section1 img {
+				max-width: 30%;
+				height: auto;
+				width: auto\9;
+			}
+
+			#section1 .header {
+				width: 100%;
+				height: 10%;
+				position: absolute;
+				top: 0;
+				background-color: black;
+				color: white;
+			}
+
+			#section1 .footer {
+				width: 100%;
+				height: 10%;
+				position: absolute;
+				bottom: 0;
+				background-color: black;
+				color: white;
+			}
+
+			#section1-mobile {
+				background-image: url("img/");
+				color: white;
+			}
+
+			#section2 {
+				font-family: Blackjack;
+				background-color: white;
+				background-size: 100% 100%;
+				color: black;
+
+			}
+
+			#section2 img {
+				max-width: 50%;
+				height: auto;
+				width: auto\9;
+			}
+
+			#section2 .header {
+				width: 100%;
+				height: 10%;
+				position: absolute;
+				top: 0;
+				background-color: black;
+				color: white;
+			}
+
+			#section2 .footer {
+				width: 100%;
+				height: 10%;
+				position: absolute;
+				bottom: 0;
+				background-color: black;
+				color: white;
+			}
+
+			#section2-mobile {
+				background-image: url("img/");
+				color: white;
+			}
+
+			#section3 {
+				font-family: Blackjack;
+				background-color: white;
+				background-size: 100% 100%;
+				color: black;
+
+			}
+
+			#section3 img {
+				max-width: 30%;
+				height: auto;
+				width: auto\9;
+			}
+
+			#section3 .header {
+				width: 100%;
+				height: 10%;
+				position: absolute;
+				top: 0;
+				background-color: black;
+				color: white;
+			}
+
+			#section3 .footer {
+				width: 100%;
+				height: 10%;
+				position: absolute;
+				bottom: 0;
+				background-color: black;
+				color: white;
+			}
+
+			#section3-mobile {
+				background-image: url("img/");
+				color: white;
+			}
+
+			#section4 {
+				font-family: Blackjack;
+/*				background-image: url("");*/		
+				background-size: 100% 100%;
+                color: white;
+
+			}
+
+			#section4 img {
+				max-width: 100%;
+				height: auto;
+				width: auto\9;
+			}
+
+
+			#section4 .footer {
+				width: 100%;
+				height: 10%;
+				position: absolute;
+				bottom: 0;
+				background-color: black;
+				color: white;
+				z-index: 1;
+			}
+
+			#section4 img {
+				z-index: -1;
+				position: absolute;
+				margin: auto;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+
+			#section4-mobile {
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="fullpage">
+			<!-- First Section -->
+			<div class="section" id="section0">
+				<p>We're getting married!</p>
+				<p>26/01/18<p>
+				<div id="countdown">
+					<p></p>
+				</div>
+			</div>
+
+			<!-- Second Section (Fullscreen) -->
+			<div class="section" id="section1">
+				<div class="header">
+					<h1>Our story</h1>
+				</div>
+
+				<div>
+					<h1>A boy and a girl first met through the art of dance...</h1>
+				</div>
+
+				<div class="footer">
+					<h1>#NeshwedsBuddhi</h1>
+				</div>
+			</div>
+
+				<div class="section" id="section3">
+					<div class="header">
+						<h1>Our story</h1>
+					</div>
+
+					<div>
+						<h1>A boy and a girl first met through the art of dance...</h1>
+					</div>
+
+					<div class="footer">
+						<h1>#NeshwedsBuddhi</h1>
+					</div>
+				</div>
+
+				<div class="section" id="section3">
+					<div class="header">
+						<h1>Our story</h1>
+					</div>
+
+					<div>
+						<h1>ancing together turned into something more...</h1>
+					</div>
+
+					<div class="footer">
+						<h1>#NeshwedsBuddhi</h1>
+					</div>
+				</div>
+
+				<div class="section" id="section3">
+					<div class="header">
+						<h1>Our story</h1>
+					</div>
+
+					<div>
+						<h1>that something more lasted for five years...<h1>
+					</div>
+
+					<div class="footer">
+						<h1>#NeshwedsBuddhi</h1>
+					</div>
+				</div>
+
+				<div class="section" id="section3">
+					<div class="header">
+						<h1>Our story</h1>
+					</div>
+
+					<div>
+						<h1>and now they await the chance to be together for forever more...</h1>
+					</div>
+
+					<div class="footer">
+						<h1>#NeshwedsBuddhi</h1>
+					</div>
+				</div>
+
+			<div class="section" id="section2">
+				<div class="header">
+					<h1>The Location and Time</h1>
+				</div>
+
+				<h1>Coming Soon!</h1>
+				<img src="img/theplace.jpg">
+				<h1></h1>
+
+				<div class="footer">
+					<h1>#NeshwedsBuddhi</h1>
+				</div>
+
+			</div>
+
+			<div class="section" id="section3">
+				<div class="header">
+					<h1>RSVP</h1>
+				</div>
+
+				<h1>Coming Soon!</h1>
+				<img src="img/nbfinal.png">
+				<!-- Logo goes here -->
+				<h1></h1>
+
+				<div class="footer">
+					<h1>#NeshwedsBuddhi</h1>
+				</div>
+
+			</div>
+
+			<div class="section" id="section4">
+
+				<img src="img/background-slide-finale.jpg">
+				<h1>We hope you'll be there to celebrate the big day with us!</h1>
+				<h1>Love Buddhi and Neshadi!</h1>
+
+				<!-- Logo goes here -->
+				<h1></h1>
+
+				<div class="footer">
+					<h1>#NeshwedsBuddhi</h1>
+				</div>
+
+			</div>
+
+		</div>	
+	</body>	
+</html>
