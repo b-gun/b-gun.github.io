@@ -1,0 +1,39 @@
+/*Section CSS*/
+.section {
+	text-align: center;
+	background-size: cover;
+}		
+
+.slide {
+	background-size: cover;
+}
+
+#section0 {
+	background-image: url("img/image_part_001.png");
+	color: white;
+}
+
+#section1 {
+	background-image: url("img/image_part_002.png");
+	color: white;
+}
+
+#section1 img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+}
+
+#section2 {
+	background-image: url("img/image_part_003.png");
+}
+
+#section2 img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+}
+
+#section3 {
+background-image: url("img/image_part_004.png");
+}
